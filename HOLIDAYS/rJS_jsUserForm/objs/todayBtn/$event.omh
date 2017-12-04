@@ -1,0 +1,3 @@
+On evClick
+	Calculate iCalendarDate as #D
+	;  Do method getToday

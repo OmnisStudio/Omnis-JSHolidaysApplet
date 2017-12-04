@@ -1,0 +1,3 @@
+On evClick
+	Do method closeCalendar
+	Do $cinst.$objs.calendarPane.$visible.$assign(kFalse)

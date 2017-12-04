@@ -1,0 +1,9 @@
+Do $cinst.$createstatement()
+
+Begin statement
+Sta: {Select * From Employee Where FirstName = @[pFirstName] and LastName = @[pLastName]}
+
+Do $cinst.$executeSQLScript() Returns lStatus
+Do $cinst.$fetch(pRow)
+
+Quit method lStatus

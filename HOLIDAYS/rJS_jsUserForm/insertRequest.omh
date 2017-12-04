@@ -1,0 +1,13 @@
+Do method populateRow
+Do iHolidayRow.$insert() Returns lStatus
+If lStatus
+	Do $cinst.$showmessage("Holiday request submitted for approval")
+	
+	Do method buildHolidayList
+	Calculate iName as ''
+	Calculate iDept as ''
+	Calculate iNumDays as 1
+	Calculate iFromDate as dat(#D)
+	Calculate iToDate as #NULL
+	Do iEmployeeList.$line.$assign(0)
+End If

@@ -1,0 +1,5 @@
+;  create a date when user scrolls through arrows of calendar
+
+Calculate iCurrMonthName as con(iMonthList.[iCurrMonthNum].C1,kSp,iYear)
+Calculate iCurrDay as dpart(kDay,iCalendarDate)
+Calculate iCalendarDate as con(iCurrDay,kSp,iCurrMonthName,kSp,iYear)

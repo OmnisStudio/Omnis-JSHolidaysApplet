@@ -1,0 +1,12 @@
+Do $cinst.$objs.aboutSubForm.$enabled.$assign(not(pEnable))
+Do $cinst.$objs.userBtn.$enabled.$assign(pEnable)
+Do $cinst.$objs.adminBtn.$enabled.$assign(pEnable)
+Do $cinst.$objs.aboutBtn.$enabled.$assign(pEnable)
+
+;  disable objects on subform
+Do iSubFormRef.$showAbout(pEnable)
+
+If pEnable
+	Do $cinst.$objs.userBtn.$enabled.$assign(iUserBtnState)
+	Do $cinst.$objs.adminBtn.$enabled.$assign(iAdminBtnState)
+End If

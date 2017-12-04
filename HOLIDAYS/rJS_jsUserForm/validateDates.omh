@@ -1,0 +1,30 @@
+If not(iToDate)
+	Calculate pErrNum as kNoToDate
+	Quit method kFalse
+End If
+
+If not(iFromDate)
+	Calculate pErrNum as kNoFromDate
+	Quit method kFalse
+End If
+
+If iFromDate<#D
+	Calculate pErrNum as kFromDateEarly
+	Quit method kFalse
+End If
+
+If iToDate<#D
+	Calculate pErrNum as kToDateEarly
+	Quit method kFalse
+End If
+
+If iToDate<iFromDate
+	Calculate pErrNum as kToDateEarly
+	Quit method kFalse
+End If
+
+If (iToDate=iFromDate)&(iNumDays>1)
+	Calculate pErrNum as kDatesSame
+	Quit method kFalse
+End If
+Quit method kTrue

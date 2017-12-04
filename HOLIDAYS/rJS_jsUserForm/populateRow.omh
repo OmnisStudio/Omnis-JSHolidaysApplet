@@ -1,0 +1,20 @@
+Do iHolidayRow.$sessionobject.$assign(iSQLObjRef)
+
+;  get the last recordID
+Do iSQLObjRef.$getRecordID("Holidays",lLastNum)
+
+Calculate iHolidayRow.ID as lLastNum+1
+
+;  update the id
+Do iSQLObjRef.$updateRecordID("Holidays",iHolidayRow.ID) Returns lUpdated
+
+;  find the employee record
+Do method getEmpRecord
+
+Calculate iHolidayRow.EmpID as iEmployeeRow.EmpID
+Calculate iHolidayRow.StartDate as iFromDate
+Calculate iHolidayRow.EndDate as iToDate
+Calculate iHolidayRow.NumDays as iNumDays
+Calculate iHolidayRow.Status as 0
+Calculate iHolidayRow.DateRequested as #D
+Calculate iHolidayRow.DateDecided as #NULL

@@ -1,0 +1,4 @@
+Set reference iSubFormRef to pRef
+If iSubFormRef
+	Do iSubFormRef.$setup(iCurrBP)
+End If

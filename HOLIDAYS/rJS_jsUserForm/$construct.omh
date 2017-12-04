@@ -1,0 +1,16 @@
+Do $cwind.$setSubFormInst($cinst)
+
+Calculate iFromDate as dat(#D)
+
+Do $itasks.[$clib().$name].$getSess Returns iSQLObjRef
+
+Calculate iCurrMonthName as con(dtm(dat(#D)),kSp,iYear)
+Calculate iCurrMonthNum as dpart(kMonth,#D)
+
+Do iStatusList.$define(iStatus,iStatusNum)
+Do iStatusList.$add("Pending",0)
+Do iStatusList.$add("Approved",1)
+Do iStatusList.$add("Refused",2)
+
+Do method buildMonths
+Do method startApp

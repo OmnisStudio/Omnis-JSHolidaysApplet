@@ -1,0 +1,177 @@
+{
+	"classtype": "kRemoteForm",
+	"internalversion": 235,
+	"designtaskname": "rtTask",
+	"nextident": 1010,
+	"lastgroupident": 3,
+	"cvardefs": [
+
+	],
+	"ivardefs": [
+		{
+			"name": "iAbout",
+			"order": 2,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCurrBP",
+			"order": 20,
+			"type": "kInteger",
+			"subtype": "k64bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iCurrTab",
+			"order": 21,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0
+		},
+		{
+			"name": "iMobileDevice",
+			"order": 1,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kTrue"
+		},
+		{
+			"name": "iPendingList",
+			"order": 18,
+			"type": "kList",
+			"subtype": "qHolidays",
+			"sublen": 0
+		},
+		{
+			"name": "iPendingListLine",
+			"order": 4,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iReasonRefused",
+			"order": 6,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iRequestRow",
+			"order": 12,
+			"type": "kRow",
+			"subtype": "sHolidays",
+			"sublen": 0
+		},
+		{
+			"name": "iReviewedList",
+			"order": 13,
+			"type": "kList",
+			"subtype": "qHolidays",
+			"sublen": 0
+		},
+		{
+			"name": "iReviewedListLine",
+			"order": 5,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iSQLObjRef",
+			"order": 14,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iStatus",
+			"order": 16,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iStatusList",
+			"order": 17,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iStatusNum",
+			"order": 15,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0
+		},
+		{
+			"name": "iStatusRadio",
+			"order": 19,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "0"
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"alpha": 255,
+		"alwaysenabledobject": "",
+		"animatelayouttransitions": false,
+		"backalpha": 0,
+		"backcolor": "kColor3DFace",
+		"backpattern": 0,
+		"cancelkeyobject": "",
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"contextmenu": "",
+		"createdate": "2017-11-22 11:36:52",
+		"currentlayoutbreakpoint": 600,
+		"defaultappearance": "kAppearanceiOS",
+		"desc": "",
+		"designshowmobiletitle": true,
+		"disabledefaultcontextmenu": false,
+		"editor": "",
+		"editordata": "",
+		"events": "",
+		"external": true,
+		"forecolor": "kWhite",
+		"horzgrid": 8,
+		"horzscroll": false,
+		"inheritedorder": 1,
+		"issupercomponent": false,
+		"layoutbreakpoints": "320,600",
+		"layouttype": "kLayoutTypeResponsive",
+		"left": 137,
+		"moddate": "2017-12-04 11:30:48",
+		"okkeyobject": "",
+		"serverlessclient": false,
+		"showascheckedout": false,
+		"showgrid": false,
+		"sizetogrid": false,
+		"startfield": 0,
+		"title": {
+			"type": 0,
+			"calc": "New remote form"
+		},
+		"top": 14,
+		"userinfo": "",
+		"version": "1",
+		"vertgrid": 8,
+		"vertscroll": false
+	},
+	"layout": {
+		"width": 810,
+		"height": 713,
+		"320": {
+			"height": 0
+		},
+		"600": {
+			"height": 0
+		}
+	}
+}

@@ -1,0 +1,16 @@
+On evClick
+	Calculate iUsingCalendar as kTrue
+	Calculate iSelectFrom as kFalse
+	Calculate iCalendarDate as iToDate
+	Do method openCalendar
+	;
+	;  Do $cinst.$objs.calendar.$visible.$assign(kTrue)
+	;  Do $cinst.$objs.prevMonth.$visible.$assign(kTrue)
+	;  Do $cinst.$objs.nextMonth.$visible.$assign(kTrue)
+	;  Do $cinst.$objs.currMonth.$visible.$assign(kTrue)
+	;  Do $cinst.$objs.closeCalendarBtn.$visible.$assign(kTrue)
+	;  Do $cinst.$objs.todayBtn.$visible.$assign(kTrue)
+	;  Do $cinst.$objs.calendarBorder.$visible.$assign(kTrue)
+	;  Calculate iCalendarOpen as kTrue
+	;
+	;  Do method enableFields (kFalse)

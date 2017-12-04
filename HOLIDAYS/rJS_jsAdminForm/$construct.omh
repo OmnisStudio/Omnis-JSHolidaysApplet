@@ -1,0 +1,11 @@
+Do $cwind.$setSubFormInst($cinst)
+
+Do $itasks.[$clib().$name].$getSess Returns iSQLObjRef
+
+Do iStatusList.$define(iStatus,iStatusNum)
+Do iStatusList.$add("Pending",0)
+Do iStatusList.$add("Approved",1)
+Do iStatusList.$add("Refused",2)
+
+Do method buildHolidayList
+Do method buildReviewedList

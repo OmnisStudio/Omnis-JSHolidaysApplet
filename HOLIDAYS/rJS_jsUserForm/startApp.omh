@@ -1,0 +1,9 @@
+Do iRecordIDsList.$sessionobject.$assign(iSQLObjRef)
+Do iRecordIDsList.$select("where TableName = 'Holidays'")
+Do iRecordIDsList.$fetch()
+If iRecordIDsList.$linecount=0
+	Do method initialiseRecords
+End If
+
+Do method buildEmpList
+Do method buildHolidayList

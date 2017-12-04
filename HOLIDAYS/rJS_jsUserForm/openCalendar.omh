@@ -1,0 +1,11 @@
+Do method enableFields (kFalse)
+
+If iCurrBP=320
+	Do $cinst.$objs.calendarPane.$top.$assign(50)
+	Do $cinst.$objs.calendarPane.$left.$assign(50)
+Else
+	Do $cinst.$objs.calendarPane.$top.$assign(90)
+	Do $cinst.$objs.calendarPane.$left.$assign(150)
+End If
+
+Do $cinst.$objs.calendarPane.$visible.$assign(kTrue)

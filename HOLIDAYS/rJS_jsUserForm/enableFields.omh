@@ -1,0 +1,6 @@
+Do $cinst.$objs.pagePane.$enabled.$assign(pEnable)
+If iUsingCalendar
+	Do $cinst.$objs.calendarPane.$enabled.$assign(not(pEnable))
+Else
+	Do $cinst.$objs.namePane.$enabled.$assign(not(pEnable))
+End If

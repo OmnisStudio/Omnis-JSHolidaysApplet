@@ -1,0 +1,17 @@
+Calculate iCurrBP as pCurrBP
+
+If iCurrBP=320
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(3)
+	Do $cinst.$objs.tabStrip.$tabvisible.$assign(kTrue)
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(1)
+	Do $ctask.$getAbout() Returns iAbout
+Else
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(3)
+	Do $cinst.$objs.tabStrip.$tabvisible.$assign(kFalse)
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(1)
+	If iCurrTab=3
+		Do $cinst.$objs.tabStrip.$currenttab.$assign(1)
+	End If
+End If
+
+Do $cinst.$objs.adminPane.$objs.statusRadio.$columncount.$assign(1)

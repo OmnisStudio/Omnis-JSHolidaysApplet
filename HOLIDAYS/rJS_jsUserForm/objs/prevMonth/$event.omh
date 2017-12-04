@@ -1,0 +1,9 @@
+On evClick
+	If iCurrMonthNum>1
+		Calculate iCurrMonthNum as iCurrMonthNum-1
+	Else
+		Calculate iCurrMonthNum as 12
+		Calculate iYear as iYear-1
+	End If
+	
+	Do method makeDate

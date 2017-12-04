@@ -1,0 +1,6 @@
+On evClick
+	Do method setSubForm (kUserForm)
+	Calculate iAdminBtnState as kTrue
+	Calculate iUserBtnState as kFalse
+	Do $cinst.$objs.adminBtn.$enabled.$assign(kTrue)
+	Do $cobj.$enabled.$assign(kFalse)

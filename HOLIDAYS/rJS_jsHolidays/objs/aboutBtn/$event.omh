@@ -1,0 +1,16 @@
+On evClick
+	Do method enableForSubPane (kFalse)
+	
+	If not(iCurrBP=320)
+		Do $cinst.$objs.aboutSubForm.$width.$assign(850)
+		Do $cinst.$objs.aboutSubForm.$height.$assign(610)
+		Do $cinst.$objs.aboutSubForm.$left.$assign(125)
+		Do $cinst.$objs.aboutSubForm.$top.$assign(100)
+	End If
+	Calculate iAboutOpen as kTrue
+	Do $cinst.$objs.aboutSubForm.$classname.$assign("rJS_jsAbout")
+	Do $cinst.$objs.aboutSubForm.$visible.$assign(kTrue)
+	
+	Do $cinst.$beginanimations(500,kJSAnimationCurveEaseIn)
+	Do $cinst.$objs.aboutSubForm.$alpha.$assign(255)
+	Do $cinst.$commitanimations()

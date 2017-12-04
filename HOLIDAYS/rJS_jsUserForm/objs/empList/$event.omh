@@ -1,0 +1,4 @@
+On evClick
+	Do method buildHolidayList
+	Calculate iName as iEmployeeList.[pLineNumber].iEmpFullName
+	Calculate iDept as iEmployeeList.[pLineNumber].Dept

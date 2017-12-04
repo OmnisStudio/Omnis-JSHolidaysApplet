@@ -1,0 +1,20 @@
+Begin text block
+Text: {Holiday is an Omnis applet developed using the Javascript controls} (Carriage return)
+Text: (Carriage return)
+Text: {Function:} (Carriage return)
+Text: {The applet allows you to create a web solution for employees to apply for annual leave} (Carriage return)
+Text: (Carriage return)
+Text: {Usage:} (Carriage return)
+Text: {There are 2 main views: User and Admin.  User view allows you to enter employee name and dates for leave.  If the employee name does not exist in the system it is added automatically.} (Carriage return)
+Text: {The History tab show previous & current leave applications.}
+Text: {The Admin view allows an administrator to sanction or reject the application.} (Carriage return)
+Text: (Carriage return)
+Text: {Components:} (Carriage return)
+Text: {The SQL tables are defined using schema classes and there is also a query class that uses columns from different tables to create a view.} (Carriage return)
+Text: {The applet uses the built-in SQL list functions $insert and $update to populate the tables as well as some custom methods in the oSQL object class.  The applet also uses subforms to switch between user and admin forms.} (Carriage return)
+Text: (Carriage return)
+Text: {Extending:} (Carriage return)
+Text: {You could add a logon screen for an employee as well as separating the user and admin functions into different forms.} (Carriage return)
+End text block
+Get text block lAboutText
+Quit method lAboutText

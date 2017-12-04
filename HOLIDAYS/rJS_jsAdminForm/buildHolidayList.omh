@@ -1,0 +1,10 @@
+Do iPendingList.$sessionobject.$assign(iSQLObjRef)
+Do iPendingList.$select("AND Status =0")     ;; find all records that await approval
+Do iPendingList.$fetch(kFetchAll)
+Do iPendingList.$cols.$add(iStatus)
+
+Do method createDisplayList (iPendingList)
+Do iPendingList.$line.$assign(1)
+If iPendingList.$linecount
+	Do iSQLObjRef.$getHolidayReq(iPendingList.ID,iRequestRow) Returns lStatus
+End If

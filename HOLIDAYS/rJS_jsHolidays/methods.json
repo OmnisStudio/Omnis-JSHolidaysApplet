@@ -1,0 +1,127 @@
+[
+	{
+		"name": "$construct",
+		"ident": 0,
+		"order": 1,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pRow",
+				"order": 1,
+				"type": "kRow",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$destruct",
+		"ident": 1,
+		"order": 2,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$event",
+		"ident": 2,
+		"order": 3,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setSubForm",
+		"ident": 3,
+		"order": 4,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pOption",
+				"order": 1,
+				"type": "kInteger",
+				"subtype": "kShortint",
+				"sublen": 0,
+				"param": 1,
+				"initval": "0"
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$closeAbout",
+		"ident": 4,
+		"order": 5,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "enableForSubPane",
+		"ident": 5,
+		"order": 6,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pEnable",
+				"order": 1,
+				"type": "kBoolean",
+				"subtype": 0,
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "$setSubFormInst",
+		"ident": 6,
+		"order": 7,
+		"clientexec": false,
+		"pvardefs": [
+			{
+				"name": "pRef",
+				"order": 1,
+				"type": "kItemref",
+				"subtype": "",
+				"sublen": 0,
+				"param": 1
+			}
+		],
+		"lvardefs": [
+
+		]
+	},
+	{
+		"name": "setup",
+		"ident": 7,
+		"order": 8,
+		"clientexec": false,
+		"pvardefs": [
+
+		],
+		"lvardefs": [
+
+		]
+	}
+]

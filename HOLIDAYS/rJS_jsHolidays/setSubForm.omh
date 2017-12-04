@@ -1,0 +1,5 @@
+If pOption=kAdminForm
+	Do $cinst.$objs.subForm.$classname.$assign("rJS_jsAdminForm")
+Else
+	Do $cinst.$objs.subForm.$classname.$assign("rJS_jsUserForm")
+End If

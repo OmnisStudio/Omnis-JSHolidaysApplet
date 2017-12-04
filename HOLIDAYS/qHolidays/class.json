@@ -1,0 +1,19 @@
+{
+	"classtype": "kQuery",
+	"internalversion": 3,
+	"nextident": 32026,
+	"properties": {
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"createdate": "2017-02-01 16:31:11",
+		"desc": "",
+		"editor": "",
+		"editordata": "",
+		"external": true,
+		"extraquerytext": "where Holidays.EmpID = Employee.EmpID ",
+		"moddate": "2011-10-05 11:04:28",
+		"showascheckedout": false,
+		"userinfo": "",
+		"version": "1"
+	}
+}

@@ -1,0 +1,26 @@
+On evClick
+	If len(iName)&not(iName=kSp)
+		Do method validateDates (lErrNum) Returns lValid
+	Else
+		Calculate lErrNum as kNoName
+	End If
+	If not(lValid)
+		Switch lErrNum
+			Case kToDateEarly
+				Calculate lErrStr as "Holiday dates invalid"
+			Case kNoFromDate
+				Calculate lErrStr as "No From Date Specified"
+			Case kNoToDate
+				Calculate lErrStr as "No To Date Specified"
+			Case kFromDateEarly
+				Calculate lErrStr as "From Date Too Early"
+			Case kDatesSame
+				Calculate lErrStr as "From Date and To Date Are The Same"
+			Case kNoName
+				Calculate lErrStr as "No name entered"
+		End Switch
+		Do $cinst.$showmessage(lErrStr)
+		Quit method
+	End If
+	
+	Do method insertRequest

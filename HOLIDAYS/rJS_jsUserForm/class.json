@@ -1,0 +1,335 @@
+{
+	"classtype": "kRemoteForm",
+	"internalversion": 325,
+	"designtaskname": "rtTask",
+	"nextident": 1028,
+	"lastgroupident": 0,
+	"cvardefs": [
+		{
+			"name": "kDatesSame",
+			"order": 5,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "5"
+		},
+		{
+			"name": "kFromDateEarly",
+			"order": 4,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "4"
+		},
+		{
+			"name": "kNoFromDate",
+			"order": 3,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "3"
+		},
+		{
+			"name": "kNoName",
+			"order": 6,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "6"
+		},
+		{
+			"name": "kNoToDate",
+			"order": 2,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "2"
+		},
+		{
+			"name": "kToDateEarly",
+			"order": 1,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "1"
+		}
+	],
+	"ivardefs": [
+		{
+			"name": "iAbout",
+			"order": 13,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCalendarDate",
+			"order": 2,
+			"type": "kDate",
+			"subtype": "kDatetime",
+			"sublen": 1,
+			"initval": "#D"
+		},
+		{
+			"name": "iCurrBP",
+			"order": 12,
+			"type": "kInteger",
+			"subtype": "k64bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iCurrDay",
+			"order": 14,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0
+		},
+		{
+			"name": "iCurrLine",
+			"order": 23,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iCurrMonthName",
+			"order": 1,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iCurrMonthNum",
+			"order": 3,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0
+		},
+		{
+			"name": "iCurrTab",
+			"order": 30,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0
+		},
+		{
+			"name": "iDept",
+			"order": 15,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iEmpFullName",
+			"order": 20,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iEmployeeList",
+			"order": 19,
+			"type": "kList",
+			"subtype": "sEmployee",
+			"sublen": 0
+		},
+		{
+			"name": "iEmployeeRow",
+			"order": 7,
+			"type": "kRow",
+			"subtype": "sEmployee",
+			"sublen": 0
+		},
+		{
+			"name": "iFromDate",
+			"order": 16,
+			"type": "kDate",
+			"subtype": "kDatetime",
+			"sublen": 1,
+			"initval": "#D"
+		},
+		{
+			"name": "iHolidayList",
+			"order": 21,
+			"type": "kList",
+			"subtype": "sHolidays",
+			"sublen": 0
+		},
+		{
+			"name": "iHolidayListLine",
+			"order": 27,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0
+		},
+		{
+			"name": "iHolidayRow",
+			"order": 22,
+			"type": "kRow",
+			"subtype": "sHolidays",
+			"sublen": 0
+		},
+		{
+			"name": "iMonthList",
+			"order": 5,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iMonthName",
+			"order": 6,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iName",
+			"order": 29,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000,
+			"initval": "''"
+		},
+		{
+			"name": "iNumDays",
+			"order": 18,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0,
+			"initval": "1"
+		},
+		{
+			"name": "iRecordIDsList",
+			"order": 26,
+			"type": "kList",
+			"subtype": "sRecordIDs",
+			"sublen": 0
+		},
+		{
+			"name": "iRecordIDsRow",
+			"order": 25,
+			"type": "kRow",
+			"subtype": "sRecordIDs",
+			"sublen": 0
+		},
+		{
+			"name": "iSelectFrom",
+			"order": 28,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kFalse"
+		},
+		{
+			"name": "iSQLObjRef",
+			"order": 24,
+			"type": "kItemref",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iStatus",
+			"order": 9,
+			"type": "kCharacter",
+			"subtype": "kSimplechar",
+			"sublen": 100000000
+		},
+		{
+			"name": "iStatusList",
+			"order": 8,
+			"type": "kList",
+			"subtype": "",
+			"sublen": 0
+		},
+		{
+			"name": "iStatusNum",
+			"order": 10,
+			"type": "kInteger",
+			"subtype": "kShortint",
+			"sublen": 0
+		},
+		{
+			"name": "iToDate",
+			"order": 17,
+			"type": "kDate",
+			"subtype": "kDatetime",
+			"sublen": 1,
+			"initval": "#D"
+		},
+		{
+			"name": "iUsingCalendar",
+			"order": 11,
+			"type": "kBoolean",
+			"subtype": 0,
+			"sublen": 0,
+			"initval": "kFalse"
+		},
+		{
+			"name": "iYear",
+			"order": 4,
+			"type": "kInteger",
+			"subtype": "k32bitint",
+			"sublen": 0,
+			"initval": "dtcy(dat(#D))"
+		}
+	],
+	"properties": {
+		"aligntogrid": false,
+		"alpha": 255,
+		"alwaysenabledobject": "",
+		"animatelayouttransitions": false,
+		"backalpha": 0,
+		"backcolor": "kColor3DFace",
+		"backpattern": 0,
+		"cancelkeyobject": "",
+		"collectperformancedata": false,
+		"componenticon": 0,
+		"componenttype": "kCompStoreHidden",
+		"contextmenu": "",
+		"createdate": "2017-11-22 11:36:54",
+		"currentlayoutbreakpoint": 600,
+		"defaultappearance": "kAppearanceiOS",
+		"desc": "",
+		"designshowmobiletitle": true,
+		"disabledefaultcontextmenu": false,
+		"editor": "",
+		"editordata": "",
+		"events": "",
+		"external": true,
+		"forecolor": "kWhite",
+		"horzgrid": 8,
+		"horzscroll": false,
+		"inheritedorder": 1,
+		"issupercomponent": false,
+		"layoutbreakpoints": "320,600",
+		"layouttype": "kLayoutTypeResponsive",
+		"left": 34,
+		"moddate": "2017-12-04 11:12:28",
+		"okkeyobject": "",
+		"serverlessclient": false,
+		"showascheckedout": false,
+		"showgrid": false,
+		"sizetogrid": false,
+		"startfield": 0,
+		"title": {
+			"type": 0,
+			"calc": "New remote form"
+		},
+		"top": 32,
+		"userinfo": "",
+		"version": "1",
+		"vertgrid": 8,
+		"vertscroll": false
+	},
+	"layout": {
+		"width": 1174,
+		"height": 740,
+		"320": {
+			"height": 0
+		},
+		"600": {
+			"height": 0
+		}
+	}
+}

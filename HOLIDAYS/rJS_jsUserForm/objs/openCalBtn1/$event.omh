@@ -1,0 +1,5 @@
+On evClick
+	Calculate iUsingCalendar as kTrue
+	Calculate iSelectFrom as kTrue
+	Calculate iCalendarDate as iFromDate
+	Do method openCalendar

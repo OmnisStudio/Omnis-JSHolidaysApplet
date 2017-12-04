@@ -1,0 +1,26 @@
+;  find the employee record / create it if reqd
+
+Calculate lFirstName as mid(iName,1,pos(kSp,iName)-1)
+Calculate lLastName as mid(iName,pos(kSp,iName)+1,len(iName))
+
+Do iSQLObjRef.$getEmpRecord(cap(lFirstName),cap(lLastName),iEmployeeRow) Returns lStatus
+If not(lStatus)|isnull(iEmployeeRow.EmpID)
+	Do iEmployeeRow.$sessionobject.$assign(iSQLObjRef)
+	
+	;  add a employee
+	Calculate iEmployeeRow.FirstName as cap(lFirstName)
+	Calculate iEmployeeRow.LastName as cap(lLastName)
+	Calculate iEmployeeRow.Dept as pick(len(iDept)>0,"TestDept",iDept)
+	Calculate iEmployeeRow.AnnualLeave as 20
+	
+	;  get the last recordID
+	Do iSQLObjRef.$getRecordID("Employee",lLastNum)
+	Calculate iEmployeeRow.EmpID as lLastNum+1
+	;  update the id
+	Do iSQLObjRef.$updateRecordID("Employee",iEmployeeRow.EmpID) Returns lUpdated
+	
+	;  create a basic record for the applet to use
+	Do iEmployeeRow.$insert()
+	;  rebuild droplist
+	Do method buildEmpList
+End If

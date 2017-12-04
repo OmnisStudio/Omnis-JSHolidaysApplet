@@ -1,0 +1,10 @@
+Do $cinst.$createstatement()
+
+Calculate lStr as $cinst.$selectnames(pRow)
+
+Begin statement
+Sta: {Select [lStr] from Holidays WHERE ID = @[pID]}
+
+Do $cinst.$executeSQLScript() Returns lStatus
+Do $cinst.$fetch(pRow)
+Quit method lStatus

@@ -1,0 +1,6 @@
+Do iMonthList.$define(iMonthName)
+For lNum from 1 to 12 step 1
+	Calculate lDate as con(1,kSp,lNum)
+	Calculate iMonthName as dtm(dat(lDate))
+	Do iMonthList.$add()
+End For

@@ -1,0 +1,6 @@
+Do iReviewedList.$sessionobject.$assign(iSQLObjRef)
+Do iReviewedList.$select("AND Status >0")     ;; find all records that have been reviewed
+Do iReviewedList.$fetch(kFetchAll)
+Do iReviewedList.$cols.$add(iStatus)
+
+Do method createDisplayList (iReviewedList)

@@ -1,0 +1,20 @@
+On evClick
+	Do iSQLObjRef.$getHolidayReq(iPendingList.[pVertCell].ID,iRequestRow) Returns lStatus
+	;
+	;  If lStatus
+	;  Calculate iEmpName as iPendingList.[pVertCell].FirstName
+	;  Calculate iDept as iPendingList.[pVertCell].Dept
+	;  Calculate iFromDate as iRequestRow.StartDate
+	;  Calculate iToDate as iRequestRow.EndDate
+	;  Calculate iNumDays as iRequestRow.NumDays
+	;  Calculate iStatusRadio as 0
+	;  Do method redrawPane
+	;  End If
+	
+On evDoubleClick
+	
+On evCellChanged
+	
+On evHeaderClick
+	
+On evHeadedListDisplayOrderChanged

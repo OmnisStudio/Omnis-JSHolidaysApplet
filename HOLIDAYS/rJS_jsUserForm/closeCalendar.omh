@@ -1,0 +1,10 @@
+If iSelectFrom
+	Calculate iFromDate as iCalendarDate
+	Calculate iToDate as iFromDate+iNumDays-1
+Else
+	Calculate iToDate as iCalendarDate
+End If
+
+Do $cinst.$objs.calendarPane.$left.$assign(1250)
+
+Do method enableFields (kTrue)

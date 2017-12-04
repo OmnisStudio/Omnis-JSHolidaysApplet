@@ -1,0 +1,16 @@
+Calculate iCurrBP as pCurrBP
+
+;  JS Migration message -- Following line needs to be updated due to use of an old constant
+If iCurrBP=320
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(3)
+	Do $cinst.$objs.tabStrip.$tabvisible.$assign(kTrue)
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(1)
+	Do $ctask.$getAbout() Returns iAbout
+Else
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(3)
+	Do $cinst.$objs.tabStrip.$tabvisible.$assign(kFalse)
+	Do $cinst.$objs.tabStrip.$selectedtab.$assign(1)
+	If iCurrTab=3
+		Do $cinst.$objs.tabStrip.$currenttab.$assign(1)
+	End If
+End If

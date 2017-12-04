@@ -1,0 +1,13 @@
+;  called by the parent window when the about box is shown / closed to disable objects
+Do $cinst.$objs.pagePane.$objs.holidayList.$hideselection.$assign(not(pEnable)) Returns #F
+Do $cinst.$objs.pagePane.$objs.holidayList.$enabled.$assign(pEnable) Returns #F
+Do $cinst.$objs.pagePane.$objs.submitBtn.$enabled.$assign(pEnable) Returns #F
+Do $cinst.$objs.empList.$enabled.$assign(pEnable) Returns #F
+Do $cinst.$objs.tabStrip.$enabled.$assign(pEnable)
+
+If not(pEnable)
+	Calculate iHolidayListLine as iHolidayList.$line
+	Do iHolidayList.$line.$assign(0)
+Else
+	Do iHolidayList.$line.$assign(iHolidayListLine)
+End If

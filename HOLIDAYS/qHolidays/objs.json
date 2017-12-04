@@ -1,0 +1,134 @@
+[
+	{
+		"ident": 32001,
+		"order": 1,
+		"properties": {
+			"alias": "",
+			"colname": "ID",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32014,
+		"order": 2,
+		"properties": {
+			"alias": "",
+			"colname": "FirstName",
+			"desc": "",
+			"schema": "sEmployee",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32015,
+		"order": 3,
+		"properties": {
+			"alias": "",
+			"colname": "LastName",
+			"desc": "",
+			"schema": "sEmployee",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32016,
+		"order": 4,
+		"properties": {
+			"alias": "",
+			"colname": "Dept",
+			"desc": "",
+			"schema": "sEmployee",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32017,
+		"order": 5,
+		"properties": {
+			"alias": "",
+			"colname": "Status",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32002,
+		"order": 6,
+		"properties": {
+			"alias": "",
+			"colname": "EmpID",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32018,
+		"order": 7,
+		"properties": {
+			"alias": "",
+			"colname": "EmpID",
+			"desc": "",
+			"schema": "sEmployee",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32020,
+		"order": 8,
+		"properties": {
+			"alias": "",
+			"colname": "StartDate",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32021,
+		"order": 9,
+		"properties": {
+			"alias": "",
+			"colname": "EndDate",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32024,
+		"order": 10,
+		"properties": {
+			"alias": "",
+			"colname": "NumDays",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32022,
+		"order": 11,
+		"properties": {
+			"alias": "",
+			"colname": "ReasonRefused",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	},
+	{
+		"ident": 32025,
+		"order": 12,
+		"properties": {
+			"alias": "",
+			"colname": "DateRequested",
+			"desc": "",
+			"schema": "sHolidays",
+			"userinfo": ""
+		}
+	}
+]

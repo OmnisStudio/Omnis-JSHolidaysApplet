@@ -1,0 +1,16 @@
+Do $cinst.$objs.adminPane.$objs.adminPending.$hideselection.$assign(not(pEnable))
+Do $cinst.$objs.adminPane.$objs.adminPending.$enabled.$assign(pEnable)
+Do $cinst.$objs.adminPane.$objs.reviewedList.$hideselection.$assign(not(pEnable))
+Do $cinst.$objs.adminPane.$objs.reviewedList.$enabled.$assign(pEnable)
+Do $cinst.$objs.adminPane.$enabled.$assign(pEnable)
+Do $cinst.$objs.tabStrip.$enabled.$assign(pEnable)
+
+If not(pEnable)
+	Calculate iReviewedListLine as iReviewedList.$line
+	Calculate iPendingListLine as iPendingList.$line
+	Do iReviewedList.$line.$assign(0)
+	Do iPendingList.$line.$assign(0)
+Else
+	Do iReviewedList.$line.$assign(iReviewedListLine)
+	Do iPendingList.$line.$assign(iPendingListLine)
+End If

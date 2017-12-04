@@ -1,0 +1,16 @@
+If iCurrBP=320
+	Do $cinst.$objs.aboutBtn.$visible.$assign(kFalse)
+	Do $cinst.$objs.splash.$visible.$assign(kFalse)
+	Do $ctask.$getAbout() Returns iAbout
+	
+	If iAboutOpen
+		Do $cinst.$closeAbout()
+	End If
+Else
+	Do $cinst.$objs.aboutBtn.$visible.$assign(kTrue)
+	Do $cinst.$objs.splash.$visible.$assign(kTrue)
+End If
+
+If iSubFormRef
+	Do iSubFormRef.$setup(iCurrBP)
+End If

@@ -1,0 +1,23 @@
+On evClick
+	Do iRequestRow.$sessionobject.$assign(iSQLObjRef)
+	
+	Calculate lOldRow as iRequestRow
+	Calculate iRequestRow.Status as iStatusRadio
+	Calculate iRequestRow.ReasonRefused as iReasonRefused
+	Calculate lStatusStr as pick(iStatusRadio,'','Approved','Refused')
+	
+	Do iRequestRow.$update(lOldRow) Returns lStatus
+	
+	If lStatus
+		Calculate iReasonRefused as
+		Calculate iStatusRadio as 0
+		Do $cinst.$objs.adminPane.$objs.approvalBtn.$enabled.$assign(kFalse)
+		Do $cinst.$objs.adminPane.$objs.otherReason.$enabled.$assign(kFalse)
+		
+		Do method buildHolidayList
+		Do method buildReviewedList
+		
+		If iMobileDevice
+			Do $cinst.$showmessage(con('Application',kSp,lStatusStr))
+		End If
+	End If

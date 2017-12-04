@@ -1,0 +1,13 @@
+On evClick
+	If iStatusRadio=2
+		Do $cinst.$objs.adminPane.$objs.approvalBtn.$text.$assign("Refused")
+		Do $cinst.$setcurfield($cinst.$objs.adminPane.$objs.otherReason)
+	Else If iStatusRadio=1
+		Do $cinst.$objs.adminPane.$objs.approvalBtn.$text.$assign("Approved")
+		Do $cinst.$setcurfield($cinst.$objs.adminPane.$objs.approvalBtn)
+	Else
+		Do $cinst.$objs.adminPane.$objs.approvalBtn.$text.$assign("Pending")
+	End If
+	
+	Do $cinst.$objs.adminPane.$objs.approvalBtn.$enabled.$assign(iStatusRadio)
+	Do $cinst.$objs.adminPane.$objs.otherReason.$enabled.$assign(iStatusRadio=2)

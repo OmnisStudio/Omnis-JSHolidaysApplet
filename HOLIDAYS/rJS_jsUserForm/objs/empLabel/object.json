@@ -1,0 +1,60 @@
+{
+	"ident": 1027,
+	"order": 27,
+	"objtype": "kComponent",
+	"componentlib": "jsLabel",
+	"componentctrl": "Label Object",
+	"properties": {
+		"alpha": 255,
+		"backalpha": 255,
+		"backcolor": "kWhite",
+		"contextmenu": "",
+		"cssclassname": "",
+		"dataname": "",
+		"desgroup": 0,
+		"designactive": true,
+		"deslock": false,
+		"disabledefaultcontextmenu": false,
+		"disablesystemfocus": true,
+		"dropmode": "kAcceptNone",
+		"enabled": true,
+		"events": "",
+		"fieldstyle": "",
+		"font": 1,
+		"fontsize": 10,
+		"fontstyle": "kPlain",
+		"objlink": 0,
+		"preventlayoutanimation": false,
+		"text": "Employee",
+		"textcolor": "kBlack",
+		"textishtml": false,
+		"tooltip": "",
+		"userinfo": "",
+		"vertcentertext": false,
+		"visible": true
+	},
+	"layout": {
+		"320": {
+			"left": 539,
+			"top": 8,
+			"width": 120,
+			"height": 25,
+			"align": "kLeftJst",
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": false
+		},
+		"600": {
+			"left": 314,
+			"top": 6,
+			"width": 120,
+			"height": 22,
+			"align": "kRightJst",
+			"dragborder": false,
+			"edgefloat": "kEFnone",
+			"errortextpos": "kJSErrorTextPosUnder",
+			"visible": true
+		}
+	}
+}

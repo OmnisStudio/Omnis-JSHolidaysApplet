@@ -1,0 +1,72 @@
+[
+	{
+		"name": "EmpID",
+		"ident": 32001,
+		"order": 1,
+		"type": "kInteger",
+		"subtype": "k32bitint",
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": true,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "FirstName",
+		"ident": 32002,
+		"order": 2,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "LastName",
+		"ident": 32003,
+		"order": 3,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "Dept",
+		"ident": 32004,
+		"order": 4,
+		"type": "kCharacter",
+		"subtype": "kSimplechar",
+		"sublen": 100000000,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	},
+	{
+		"name": "AnnualLeave",
+		"ident": 32005,
+		"order": 5,
+		"type": "kInteger",
+		"subtype": "kShortint",
+		"sublen": 0,
+		"properties": {
+			"desc": "",
+			"nonull": false,
+			"primarykey": false,
+			"userinfo": ""
+		}
+	}
+]

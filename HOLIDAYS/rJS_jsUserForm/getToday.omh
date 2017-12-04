@@ -1,0 +1,6 @@
+;  reset date to today
+
+Calculate iCalendarDate as #D
+Calculate iYear as dpart(kYear,#D)
+Calculate iCurrMonthNum as dpart(kMonth,#D)
+Do method makeDate

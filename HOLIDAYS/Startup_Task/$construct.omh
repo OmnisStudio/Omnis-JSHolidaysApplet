@@ -1,0 +1,18 @@
+Calculate lPath as $clib().$pathname
+Calculate lLibName as $clib().$name
+Calculate lPath as mid(lPath,1,rpos(lLibName,lPath)-1)
+Calculate iHost as con(lPath,lLibName,".db")
+If sys(6)='X'
+	Do FileOps.$converthfspathtoposixpath(iHost,iHost)
+End If
+
+Do tSQLObj.$opencreate.$assign(kTrue)     ;; create a new sqlite database if it does not exist
+
+Do tSQLObj.$logon(iHost,"","",lLibName) Returns lLoggedOn
+
+If not(lLoggedOn)
+	Send to trace log {[(con("Holidays Applet - Error logging on to SQLite db",kSp,iHost))]}
+Else
+	Do method dbValidate     ;; ensure the necessary tables exist
+	Do $clib.$remoteforms.rJS_jsHolidays.$open("*")
+End If

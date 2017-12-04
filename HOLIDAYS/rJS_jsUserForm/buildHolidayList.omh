@@ -1,0 +1,25 @@
+Do iHolidayList.$definefromsqlclass('sHolidays')
+Do iHolidayList.$sessionobject.$assign(iSQLObjRef)
+
+If not(isnull(iEmployeeList.EmpID))     ;; we know who the user is
+	Do iHolidayList.$select(con("where EmpID=",iEmployeeList.EmpID))
+Else
+	Do iHolidayList.$select()     ;; all records
+End If
+
+Do iHolidayList.$fetch(kFetchAll)
+
+Do iHolidayList.$cols.$add(iStatus)
+Do iHolidayList.$cols.$add(iName)
+
+Calculate lTotal as iHolidayList.$linecount
+For lNum from 1 to lTotal step 1
+	Calculate lStatus as iHolidayList.[lNum].Status
+	Do iStatusList.$search(iStatusNum=lStatus)
+	Do iStatusList.$first(kTrue)
+	Do iStatusList.$loadcols()
+	Do iEmployeeList.$search(iEmployeeList.EmpID=iHolidayList.[lNum].EmpID)
+	Do iEmployeeList.$first(kTrue)
+	Do iEmployeeList.$loadcols()
+	Do iHolidayList.[lNum].$assigncols(,,,,,,,,,iStatus,iEmployeeList.iEmpFullName)
+End For
